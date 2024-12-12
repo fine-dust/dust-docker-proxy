@@ -16,21 +16,21 @@ TARGET_UPSTREAM = ""
 name = "cloudflare-docker-proxy"
 # 如果想要手动为 CUSTOM_DOMAIN 添加 DNS 解析记录，请注释或删除掉 route
 routes = [
-  { pattern = "hub.hczhch.us.kg", custom_domain = true },
-  { pattern = "docker.hczhch.us.kg", custom_domain = true },
-  { pattern = "quay.hczhch.us.kg", custom_domain = true },
-  { pattern = "gcr.hczhch.us.kg", custom_domain = true },
-  { pattern = "k8s-gcr.hczhch.us.kg", custom_domain = true },
-  { pattern = "k8s.hczhch.us.kg", custom_domain = true },
-  { pattern = "ghcr.hczhch.us.kg", custom_domain = true },
-  { pattern = "cloudsmith.hczhch.us.kg", custom_domain = true },
-  { pattern = "ecr.hczhch.us.kg", custom_domain = true },
-  { pattern = "mcr.hczhch.us.kg", custom_domain = true },
-  { pattern = "elastic.hczhch.us.kg", custom_domain = true },
-  { pattern = "nvcr.hczhch.us.kg", custom_domain = true },
-  { pattern = "juju.hczhch.us.kg", custom_domain = true },
-  { pattern = "l5d.hczhch.us.kg", custom_domain = true },
-  { pattern = "rocks.hczhch.us.kg", custom_domain = true },
+  { pattern = "hub.grit.us.kg", custom_domain = true },
+  { pattern = "docker.grit.us.kg", custom_domain = true },
+  { pattern = "quay.grit.us.kg", custom_domain = true },
+  { pattern = "gcr.grit.us.kg", custom_domain = true },
+  { pattern = "k8s-gcr.grit.us.kg", custom_domain = true },
+  { pattern = "k8s.grit.us.kg", custom_domain = true },
+  { pattern = "ghcr.grit.us.kg", custom_domain = true },
+  { pattern = "cloudsmith.grit.us.kg", custom_domain = true },
+  { pattern = "ecr.grit.us.kg", custom_domain = true },
+  { pattern = "mcr.grit.us.kg", custom_domain = true },
+  { pattern = "elastic.grit.us.kg", custom_domain = true },
+  { pattern = "nvcr.grit.us.kg", custom_domain = true },
+  { pattern = "juju.grit.us.kg", custom_domain = true },
+  { pattern = "l5d.grit.us.kg", custom_domain = true },
+  { pattern = "rocks.grit.us.kg", custom_domain = true },
 ]
 
 [env.staging.vars]
@@ -39,7 +39,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.hczhch.us.kg", custom_domain = true }
+route = { pattern = "docker-staging.grit.us.kg", custom_domain = true }
 
 [env.dev.vars]
 MODE = "debug"
